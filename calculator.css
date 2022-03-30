@@ -18,6 +18,7 @@ body {
 
 #display {
     background-color: #BBD0BF;
+    min-height: 2rem;
     color: #565656;
     font-size: 2rem;
     margin: auto 0;

@@ -1,2 +1,2 @@
-# calculator
+# Calculator
 Author: Edinson Acevedo C.
