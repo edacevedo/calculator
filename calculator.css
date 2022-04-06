@@ -11,42 +11,122 @@ body {
 #main {
     margin: 3rem;
     background-color: #565656;
-    padding: 4rem;
+    padding: 4rem 4rem 2rem 4rem;
     box-shadow: 0px 10px #424241;
     border-radius: 15px;
+    min-width: 21rem
 }
 
 #display {
     background-color: #BBD0BF;
-    min-height: 2rem;
+    direction: ltr;
+    display: table-cell;
+    min-height: 2.4rem;
     color: #565656;
     font-size: 2rem;
     margin: auto 0;
     padding: 1rem 0.5rem;
     border-radius: 5px;
+    overflow: hidden;
+    text-overflow: clip;
+    min-width: 20rem;
+    max-width: 20rem;
+    text-align: right;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select: none;
+    vertical-align: middle;
+}
+
+#display span {
+    float: right;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 #buttons {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin-top: 1rem;
     gap: 0.3rem;
+    grid-template-areas:    "divisionKey multiplicationKey sustractionKey addKey"
+                            "sevenKey eigthKey nineKey undoKey"
+                            "fourKey fiveKey sixKey clearKey"
+                            "oneKey twoKey threeKey equalKey"
+                            "zeroKey zeroKey dotKey equalKey";
 }
 
-.buttons-row {
-    display: flex;
-    gap: .3rem;
+.division-key {
+    grid-area: divisionKey;
+} 
+.multiplication-key {
+    grid-area: multiplicationKey;
+} 
+.sustraction-key {
+    grid-area: sustractionKey;
+}
+.add-key {
+    grid-area: addKey;
+}
+.seven-key {
+    grid-area: sevenKey;
+} 
+.eigth-key {
+    grid-area: eigthKey;
+} 
+.nine-key {
+    grid-area: nineKey;
+} 
+.undo-key {
+    grid-area: undoKey;
+}
+.four-key {
+    grid-area: fourKey;
+} 
+.five-key {
+    grid-area: fiveKey;
+} 
+.six-key {
+    grid-area: sixKey;
+} 
+.clear-key {
+    grid-area: clearKey;
+}
+.one-key {
+    grid-area: oneKey;
+} 
+.two-key {
+    grid-area: twoKey;
+}
+.three-key {
+    grid-area: threeKey;
+} 
+.equal-key {
+    grid-area: equalKey;
+}
+.zero-key {
+    grid-area: zeroKey;
+} 
+.dot-key {
+    grid-area: dotKey;
+} 
+.equal-key {
+    grid-area: equalKey;
 }
 
-.buttons-row button {
-    min-height: 5rem;
-    min-width: 5rem;
-    font-size: 2rem;
+button {
+    min-height: 4rem;
+    min-width: 4rem;
+    font-size: 1.5rem;
     background-color: #EBEBEB;
     border-radius: 5px;
 }
 
 #equal-button {
+    color: white;
+    background-color: #55bd6b;
+}
+
+#undo-button {
     color: white;
     background-color: #FAA64D;
 }

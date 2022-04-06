@@ -10,35 +10,31 @@
 </head>
 <body>
     <div id="main">
-        <p id="display">0</p>
+        <div id="display"><span>0</span></div>
         <div id="buttons">
-            <div class="buttons-row">
-                <button data-key-value="7">7</button>
-                <button data-key-value="8">8</button>
-                <button data-key-value="9">9</button>
-                <button data-key-value="/">/</button>
-            </div>
-            <div class="buttons-row">
-                <button data-key-value="4">4</button>
-                <button data-key-value="5">5</button>
-                <button data-key-value="6">6</button>
-                <button data-key-value="x">x</button>
+                <button class="key division-key"  data-key-value="/">/</button>
+                <button class="key multiplication-key"  data-key-value="*">x</button>
+                <button class="key sustraction-key"  data-key-value="-">-</button>      
+                <button class="key add-key"  data-key-value="+">+</button>
                 
-            </div>
-            <div class="buttons-row">
-                <button data-key-value="1">1</button>
-                <button data-key-value="2">2</button>
-                <button data-key-value="3">3</button>
-                <button data-key-value="-">-</button>      
-            </div>
-            <div class="buttons-row">
-                <button data-key-value="0">0</button>
-                <button data-key-value="c" id="clear-button">C</button>
-                <button data-key-value="=" id="equal-button">=</button>
-                <button data-key-value="+">+</button>
-            </div>
+                <button class="key seven-key" data-key-value="7">7</button>
+                <button class="key eigth-key"  data-key-value="8">8</button>
+                <button class="key nine-key"  data-key-value="9">9</button>
+                <button onclick="onClickUndo()" class="undo-key" data-key-value="c" id="undo-button"><</button>
+                
+                <button class="key four-key" data-key-value="4">4</button>
+                <button class="key five-key"  data-key-value="5">5</button>
+                <button class="key six-key"  data-key-value="6">6</button>
+                <button onclick="onClickClear()"  class="clear-key" data-key-value="c" id="clear-button">AC</button>
+                
+                <button class="key"  class="one-key" data-key-value="1">1</button>
+                <button class="key"  class="two-key" data-key-value="2">2</button>
+                <button class="key"  class="three-key" data-key-value="3">3</button>
+                <button onclick="onClickEqual()" class="equal-key" data-key-value="=" id="equal-button">=</button>
+                
+                <button class="key zero-key" data-key-value="0">0</button>
+                <button class="key dot-key" data-key-value=".">.</button>
         </div>
     </div>
-    
 </body>
 </html>
